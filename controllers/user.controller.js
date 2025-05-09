@@ -4,8 +4,9 @@ import { ApiResponse } from "../utils/ApiResponse.js";
 import { generateAccessAndRefreshToken } from "../utils/generateAccessAndRefreshToken.js";
 
 export const registerUser = async (req, res) => {
-  try {
+  
     console.log("req.body", req.body);
+  try {
     const { username, email, password, phoneNumber } = req.body;
 
     if (
